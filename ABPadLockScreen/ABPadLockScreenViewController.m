@@ -59,6 +59,18 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _remainingAttempts = -1;
+        
+        _lockedOutString = NSLocalizedString(@"You have been locked out.", @"");
+        _pluralAttemptsLeftString = NSLocalizedString(@"attempts left", @"");
+        _singleAttemptLeftString = NSLocalizedString(@"attempt left", @"");
+    }
+    return self;
+}
+
 #pragma mark -
 #pragma mark - Attempts
 - (void)setAllowedAttempts:(NSInteger)allowedAttempts
