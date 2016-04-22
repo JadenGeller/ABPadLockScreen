@@ -37,7 +37,7 @@
 - (instancetype)initWithDelegate:(id<ABPadLockScreenViewControllerDelegate>)delegate complexPin:(BOOL)complexPin;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder;
 
-@property (nonatomic, weak, readonly) id<ABPadLockScreenViewControllerDelegate> lockScreenDelegate;
+@property (nonatomic, weak) id<ABPadLockScreenViewControllerDelegate> lockScreenDelegate;
 @property (nonatomic, assign, readonly) NSInteger totalAttempts;
 @property (nonatomic, assign, readonly) NSInteger remainingAttempts;
 
