@@ -40,6 +40,18 @@
 
 #pragma mark -
 #pragma mark - init methods
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _tapSoundEnabled = NO;
+        _errorVibrateEnabled = NO;
+        _currentPin = @"";
+        _complexPin = NO;
+    }
+    return self;
+}
+
 - (instancetype)init
 {
     self = [super init];

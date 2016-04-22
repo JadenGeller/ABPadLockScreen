@@ -39,6 +39,7 @@
 @property (nonatomic, assign) BOOL errorVibrateEnabled; //No by Default
 
 - (id)initWithComplexPin:(BOOL)complexPin;
+- (id)initWithCoder:(NSCoder *)aDecoder;
 
 - (void)newPinSelected:(NSInteger)pinNumber;
 - (void)deleteFromPin;
